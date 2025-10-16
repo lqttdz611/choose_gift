@@ -171,12 +171,12 @@ function showResult(option) {
     document.getElementById("resultTitle").textContent = "🎉 Chúc mừng!";
     document.getElementById("resultText").textContent =
       "Bạn đã nhận được một chiếc ô tô màu đen:";
-    document.getElementById("resultImage").src = "assets/oto.jpg";
+    document.getElementById("resultImage").src = "./assets/oto.jpg";
   } else if (option === 4) {
     document.getElementById("resultTitle").textContent = "🎉 Chúc mừng!";
     document.getElementById("resultText").textContent =
       "Bạn đã nhận được một đôi tất:";
-    document.getElementById("resultImage").src = "assets/tat.jpg";
+    document.getElementById("resultImage").src = "./assets/tat.jpg";
   }
 }
 
