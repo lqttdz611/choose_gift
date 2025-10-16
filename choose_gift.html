@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khảo Sát Quà Tặng</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img src="assets/logo_studio1.png" alt="Team Web Logo" class="logo" />
+      <h1>🎁 Bạn muốn nhận quà gì từ Team Web? 🎁</h1>
+
+      <div class="options" id="options">
+        <button class="option-btn" onclick="showVerification(1)">
+          📱 Điện thoại iPhone 10-17 Pro Max
+        </button>
+        <button class="option-btn" onclick="showVerification(2)">
+          💰 Chọn tiền mặt
+        </button>
+        <button class="option-btn" onclick="showResult(3)">
+          🚗 Một chiếc ô tô màu đen
+        </button>
+        <button class="option-btn" onclick="showResult(4)">
+          🎁/💰/🚗 Chọn tất
+        </button>
+      </div>
+
+      <div class="verification" id="verification">
+        <h2>🤖 Xác minh bạn không phải Robot</h2>
+        <div class="math-problem" id="mathProblem"></div>
+        <input
+          type="text"
+          id="answer"
+          placeholder="Nhập câu trả lời của bạn..."
+        />
+        <div class="error-msg" id="errorMsg">❌ Sai rồi! Hãy thử lại...</div>
+        <div style="margin-top: 15px">
+          <button onclick="checkAnswer()">Xác nhận</button>
+          <button class="back-btn" onclick="goBack()">Quay lại</button>
+        </div>
+      </div>
+
+      <div class="result" id="result">
+        <h2 id="resultTitle"></h2>
+        <p id="resultText"></p>
+        <img id="resultImage" src="" alt="" />
+        <div style="margin-top: 20px">
+          <button class="option-btn" onclick="reset()" style="width: 100%">
+            🔄 Chọn lại
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
